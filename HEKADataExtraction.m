@@ -6,9 +6,9 @@
 % First delete/move all other files in the folder that are not in the 
 % '.hkr' format. Place the script in the folder and run it.
 %
-% The output is an 1xn struct where the first field is conductance, the
-% second field is the corresponding time, and the third field is a 
-% comment (i.e. the file name).
+% The output is an 1xn struct (labeled 'Output') where the first field 
+% is conductance, the second field is the corresponding time, and the
+% third field is a comment (i.e. the file name).
 
 files = dir('*.hkr');
 [rows,columns] = size(files);
